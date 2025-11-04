@@ -3,84 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>홍길동 | UX 디자이너 포트폴리오</title>
+  <title>홍길동 | UX 포트폴리오</title>
   <link href="https://fonts.googleapis.com/css2?family=SUIT&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'SUIT', sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: #ffffff;
+      line-height: 1.6;
+      min-height: 100vh;
+      background-attachment: fixed;
     }
 
     header {
-      background-color: #f8f9fa;
-      padding: 2rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
-      border-bottom: 1px solid #ddd;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
     }
 
     header p {
-      margin-top: 0.5rem;
       font-size: 1.2rem;
-      color: #666;
+      color: #ccc;
+      margin-top: 0.5rem;
     }
 
     nav {
       text-align: center;
-      margin: 2rem 0;
+      margin-bottom: 3rem;
     }
 
     nav a {
-      margin: 0 1rem;
+      margin: 0 1.5rem;
+      color: #ddd;
       text-decoration: none;
       font-weight: 500;
-      color: #333;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #0070f3;
+      color: #ffffff;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 0 1.5rem 4rem;
     }
 
     section {
       margin-bottom: 4rem;
     }
 
-    .project {
-      border: 1px solid #eaeaea;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      transition: box-shadow 0.3s ease;
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
     }
 
-    .project:hover {
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    .glass-box:hover {
+      transform: translateY(-5px);
     }
 
-    .project h3 {
+    .glass-box h3 {
       margin-top: 0;
       font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .glass-box p {
+      color: #ddd;
+    }
+
+    a {
+      color: #89caff;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #f1f1f1;
       font-size: 0.9rem;
-      color: #777;
+      color: #999;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -88,7 +113,7 @@
 
   <header>
     <h1>홍길동</h1>
-    <p>UX 디자이너 · 사용자 중심 경험 설계 전문가</p>
+    <p>UX 디자이너 · 사용자 중심 설계</p>
   </header>
 
   <nav>
@@ -99,39 +124,41 @@
 
   <div class="container">
     <section id="about">
-      <h2>👩‍💻 About Me</h2>
-      <p>안녕하세요! 사용자 경험을 연구하고 설계하는 UX 석사과정 학생 홍길동입니다. 사람과 기술을 연결하는 디자인을 통해, 더 나은 서비스를 만들고자 노력하고 있습니다.</p>
+      <div class="glass-box">
+        <h2>👩‍💻 About Me</h2>
+        <p>UX 전공 석사과정 학생 홍길동입니다. 사용자 중심 사고로 문제를 해결하고, 더 나은 디지털 경험을 만들기 위해 노력하고 있습니다. 리서치, 프로토타이핑, 사용자 테스트에 강점을 가지고 있으며 다양한 협업 프로젝트를 통해 실무 감각을 키워왔습니다.</p>
+      </div>
     </section>
 
     <section id="projects">
       <h2>📁 프로젝트</h2>
 
-      <div class="project">
-        <h3>사용자 여정 분석을 통한 모바일 앱 리디자인</h3>
-        <p>실제 앱 사용자 데이터를 기반으로 UX 문제점을 도출하고, 사용자 흐름 개선을 중심으로 리디자인을 진행했습니다.</p>
-        <p><strong>도구:</strong> Figma, Miro, Notion</p>
+      <div class="glass-box">
+        <h3>1. 앱 UX 리디자인 프로젝트</h3>
+        <p>기존 앱의 사용자 흐름을 분석하고, 문제를 도출한 뒤 UX 설계를 개선했습니다. 직관적인 네비게이션과 감성적 UI 디자인을 통해 만족도를 40% 향상시켰습니다.</p>
+        <p><strong>사용 툴:</strong> Figma, Miro, Adobe XD</p>
       </div>
 
-      <div class="project">
-        <h3>웹 접근성 향상을 위한 UI 개선</h3>
-        <p>장애인을 포함한 다양한 사용자에게 접근성 높은 UI를 제공하기 위한 프로젝트로, WCAG 기준에 맞춘 UI를 설계했습니다.</p>
-        <p><strong>도구:</strong> Adobe XD, HTML/CSS, Axe DevTools</p>
+      <div class="glass-box">
+        <h3>2. 웹 접근성 강화 UI 리서치</h3>
+        <p>웹 접근성 기준(WCAG 2.1)을 분석하고, 시각 장애 사용자 인터뷰를 통해 UI/UX를 개선했습니다. 정부기관 관련 웹사이트 리뉴얼 제안서도 포함되어 있습니다.</p>
+        <p><strong>사용 툴:</strong> Notion, VoiceOver, Axe DevTools</p>
       </div>
-
     </section>
 
     <section id="contact">
-      <h2>📬 Contact</h2>
-      <p>이메일: honggildong@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <div class="glass-box">
+        <h2>📬 Contact</h2>
+        <p>이메일: honggildong@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      </div>
     </section>
   </div>
 
   <footer>
-    ⓒ 2025 홍길동 · Designed with ❤️ | Powered by <a href="https://gptonline.ai/ko/" target="_blank">GPTOnline.ai</a>
+    ⓒ 2025 홍길동 · Designed with 글래스모피즘 ✨ | Powered by <a href="https://gptonline.ai/ko/" target="_blank">GPTOnline.ai</a>
   </footer>
 
 </body>
 </html>
-
