@@ -24,6 +24,8 @@
     header {
       padding: 3rem 1rem 2rem;
       text-align: center;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
@@ -33,7 +35,6 @@
 
     header p {
       font-size: 1.2rem;
-      color: #444;
       margin-top: 0.5rem;
     }
 
@@ -44,14 +45,15 @@
 
     nav a {
       margin: 0 1.5rem;
-      color: #333;
+      color: #f1f1f1;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     nav a:hover {
-      color: #000;
+      color: #ffffff;
     }
 
     .container {
@@ -65,18 +67,18 @@
     }
 
     .glass-box {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.25);
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 16px;
       padding: 2rem;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease;
     }
 
     .glass-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
     }
 
     .glass-box h3 {
@@ -85,24 +87,41 @@
     }
 
     .glass-box p {
-      color: #333;
+      color: #2c2c2c;
     }
 
     a {
-      color: #007acc;
+      color: #205a5a;
+      font-weight: 500;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #555;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      color: #eee;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
@@ -110,7 +129,7 @@
 
   <header>
     <h1>이현화</h1>
-    <p>UX 디자이너 · 사용자 중심 설계</p>
+    <p>UX 디자이너 · 사람과 감성을 연결하는 설계자</p>
   </header>
 
   <nav>
@@ -123,7 +142,7 @@
     <section id="about">
       <div class="glass-box">
         <h2>👩‍💻 About Me</h2>
-        <p>UX 전공 석사과정 학생 <strong>이현화</strong>입니다. 사용자 중심 사고로 문제를 해결하고, 더 나은 디지털 경험을 만들기 위해 노력하고 있습니다. 리서치, 프로토타이핑, 사용자 테스트에 강점을 가지고 있으며 다양한 협업 프로젝트를 통해 실무 감각을 키워왔습니다.</p>
+        <p>안녕하세요. 저는 UX 전공 석사과정 중인 <strong>이현화</strong>입니다. 사용자 중심의 깊이 있는 리서치와 감성적인 인터페이스 설계를 통해 사람들에게 기억에 남는 경험을 제공하고자 합니다. 디지털과 감성의 접점을 연구하며, 문제 해결의 실마리를 디자인에서 찾습니다.</p>
       </div>
     </section>
 
@@ -131,15 +150,15 @@
       <h2>📁 프로젝트</h2>
 
       <div class="glass-box">
-        <h3>1. 앱 UX 리디자인 프로젝트</h3>
-        <p>기존 앱의 사용자 흐름을 분석하고, 문제를 도출한 뒤 UX 설계를 개선했습니다. 직관적인 네비게이션과 감성적 UI 디자인을 통해 만족도를 40% 향상시켰습니다.</p>
-        <p><strong>사용 툴:</strong> Figma, Miro, Adobe XD</p>
+        <h3>1. 사용자 중심 앱 리디자인</h3>
+        <p>실제 사용자 피드백을 바탕으로 모바일 앱의 정보 구조와 인터랙션을 재구성했습니다. 더 쉬운 내비게이션과 따뜻한 디자인으로 UX 만족도를 40% 향상시켰습니다.</p>
+        <p><strong>도구:</strong> Figma, Notion, UsabilityHub</p>
       </div>
 
       <div class="glass-box">
-        <h3>2. 웹 접근성 강화 UI 리서치</h3>
-        <p>웹 접근성 기준(WCAG 2.1)을 분석하고, 시각 장애 사용자 인터뷰를 통해 UI/UX를 개선했습니다. 정부기관 관련 웹사이트 리뉴얼 제안서도 포함되어 있습니다.</p>
-        <p><strong>사용 툴:</strong> Notion, VoiceOver, Axe DevTools</p>
+        <h3>2. 감정 기반 UI 리서치</h3>
+        <p>사용자의 정서적 반응을 분석하여 공감 기반 UI를 설계했습니다. 감정 키워드를 중심으로 한 디자인 컨셉 도출 및 시각화가 주요 성과입니다.</p>
+        <p><strong>도구:</strong> Adobe XD, Miro, Dovetail</p>
       </div>
     </section>
 
@@ -154,9 +173,8 @@
   </div>
 
   <footer>
-    ⓒ 2025 이현화 · Designed with Glassmorphism ✨ | Powered by <a href="https://gptonline.ai/ko/" target="_blank">GPTOnline.ai</a>
+    ⓒ 2025 이현화 · Designed in the woods 🍃 | Powered by <a href="https://gptonline.ai/ko/" target="_blank">GPTOnline.ai</a>
   </footer>
 
 </body>
 </html>
-
